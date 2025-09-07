@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "Orbitron", monospace;
+  --font-inter: "Inter", sans-serif;
+
+  --color-military-green: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  --color-accent-orange: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+  --color-gradient-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #1e293b 50%, #334155 75%, #475569 100%);
+}
+
+@layer base {
+  .font-orbitron {
+    font-family: var(--font-orbitron);
+  }
+
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: var(--color-gradient-bg);
+  }
+
+  .military-green {
+    background: var(--color-military-green);
+  }
+
+  .accent-orange {
+    background: var(--color-accent-orange);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+  }
+
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .nav-active {
+    background: rgba(34, 197, 94, 0.2);
+    border-bottom: 2px solid #22c55e;
+    color: #22c55e !important;
+  }
+  .active-channel {
+    background: rgba(34, 197, 94, 0.2) !important;
+    border-left: 3px solid #22c55e;
+  }
+  .section-content {
+    min-height: 100vh;
+  }
+  .auth-tab-active {
+    background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+    color: white;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+  }
+
+  .auth-form {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+  }
+
+  .auth-form.hidden {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
