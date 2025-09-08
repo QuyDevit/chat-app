@@ -75,7 +75,7 @@ export default function RegisterSection() {
             </div>
           </div>
         </div>
-        <div className="min-h-screen flex items-center justify-center px-4 relative">
+        <div className="min-h-screen lg:max-w-md relative flex items-center justify-center px-4">
           <div className="max-w-md w-full">
             <div className="bg-slate-900 p-8 rounded-xl border border-slate-700">
               <div className="text-center mb-8">

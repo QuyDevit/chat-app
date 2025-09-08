@@ -76,7 +76,7 @@ export default function LoginSection() {
           </div>
         </div>
         <div className="min-h-screen lg:min-w-md relative flex items-center justify-center px-4">
-          <div className="max-w-lg w-full">
+          <div className="max-w-md w-full">
             <div className="bg-slate-900 p-8 rounded-xl border border-slate-700">
               <div className="text-center mb-8">
                 <h2 className="font-bold text-3xl text-white mb-2">Đăng nhập</h2>
